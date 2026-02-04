@@ -5,6 +5,7 @@ This program follows along this tutorial "https://learn.microsoft.com/en-us/dotn
 Console.Clear();
 //WorkWithIntegers();
 //OrderPrecedence();
+//WorkWithIntegerLimits();
 
 // 1: explore integer math
 void WorkWithIntegers()
@@ -52,17 +53,38 @@ void OrderPrecedence()
 }
 
 // 3: Interger precision and limits
-int a = 7;
-int b = 4;
-int c = 3;
-int d = (a + b) / c;
-int e = (a + b) % c; // % operator gives remainder of division
-Console.WriteLine($"quotient: {d}");
-Console.WriteLine($"remainder: {e}");
+void WorkWithIntegerLimits()
+{
+    int a = 7;
+    int b = 4;
+    int c = 3;
+    int d = (a + b) / c;
+    int e = (a + b) % c; // % operator gives remainder of division
+    Console.WriteLine($"quotient: {d}");
+    Console.WriteLine($"remainder: {e}");
 
-int max = int.MaxValue;
-int min = int.MinValue;
-Console.WriteLine($"The range of integers is {min} to {max}");
+    int max = int.MaxValue;
+    int min = int.MinValue;
+    Console.WriteLine($"The range of integers is {min} to {max}");
 
-int what = max + 3; //integers 'overflow' to the lowest value when you try to exceed the maximum value
-Console.WriteLine($"An example of overflow: {what}");
+    int what = max + 3; //integers 'overflow' to the lowest value when you try to exceed the maximum value
+    Console.WriteLine($"An example of overflow: {what}");
+}
+
+// 4: Work with the double type
+double a = 25;
+double b = 13;
+double c = (a + b) / 7; //Won't truncate like int at whole number scale
+Console.WriteLine(c);
+
+double max = double.MaxValue; //double limits are much greater than int
+double min = double.MinValue;
+Console.WriteLine($"The range of double is {min} to {max}");
+
+double third = 1.0 / 3.0; //can truncate like int
+Console.WriteLine(third);
+
+double r = 2.3;
+double pi = 3.14;
+double circumference = 2 * r * pi;
+Console.WriteLine(circumference);
