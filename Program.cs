@@ -4,6 +4,7 @@ This program follows along this tutorial "https://learn.microsoft.com/en-us/dotn
 
 Console.Clear();
 //WorkWithIntegers();
+OrderPrecedence();
 
 // 1: explore integer math
 void WorkWithIntegers()
@@ -28,8 +29,24 @@ void WorkWithIntegers()
     Console.WriteLine(c);
 }
 
-int a = 5;
-int b = 4;
-int c = 2;
-int d = a + b * c;
-Console.WriteLine(d);
+// 2: Explore order of operations
+void OrderPrecedence()
+{
+    int a = 5;
+    int b = 4;
+    int c = 2;
+    int d = a + b * c; //multiplication takes priority over addition
+    Console.WriteLine(d);
+
+    d = (a + b) * c; //parenthesis take priority over multiplication
+    Console.WriteLine(d);
+
+    d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+    Console.WriteLine(d);
+
+    int e = 7;
+    int f = 4;
+    int g = 3;
+    int h = (e + f) / g; //Type Integer will always return Type Integer, even if it isn't as accurate
+    Console.WriteLine(h);
+}

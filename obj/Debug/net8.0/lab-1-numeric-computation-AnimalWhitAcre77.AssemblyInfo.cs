@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lab-1-numeric-computation-AnimalWhitAcre77")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84cd81e7e2bbe11c1f9ecedd1572156d0400c2b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+969dbbda2e8ef3860a9aaf82b8efa3f845d79cd5")]
 [assembly: System.Reflection.AssemblyProductAttribute("lab-1-numeric-computation-AnimalWhitAcre77")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lab-1-numeric-computation-AnimalWhitAcre77")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
