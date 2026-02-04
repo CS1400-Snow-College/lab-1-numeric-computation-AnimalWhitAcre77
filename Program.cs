@@ -6,6 +6,7 @@ Console.Clear();
 //WorkWithIntegers();
 //OrderPrecedence();
 //WorkWithIntegerLimits();
+//WorkWithDoubles();
 
 // 1: explore integer math
 void WorkWithIntegers()
@@ -72,19 +73,40 @@ void WorkWithIntegerLimits()
 }
 
 // 4: Work with the double type
-double a = 25;
-double b = 13;
-double c = (a + b) / 7; //Won't truncate like int at whole number scale
-Console.WriteLine(c);
+void WorkWithDoubles()
+{
+    double a = 25;
+    double b = 13;
+    double c = (a + b) / 7;
+    Console.WriteLine(c);
 
-double max = double.MaxValue; //double limits are much greater than int
-double min = double.MinValue;
-Console.WriteLine($"The range of double is {min} to {max}");
+    double max = double.MaxValue; //double limits are much greater than int
+    double min = double.MinValue;
+    Console.WriteLine($"The range of double is {min} to {max}");
 
-double third = 1.0 / 3.0; //can truncate like int
-Console.WriteLine(third);
+    double third = 1.0 / 3.0; //can truncate like int
+    Console.WriteLine(third);
 
-double r = 2.3;
-double pi = 3.14;
-double circumference = 2 * r * pi;
-Console.WriteLine(circumference);
+    double r = 2.3;
+    double pi = 3.14;
+    double circumference = 2 * r * pi;
+    Console.WriteLine(circumference);
+}
+
+// 5: Work with decimal types
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b); 
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d); //Greater Precision than Double
+
+// Calculate the area of a circle
+double radius = 2.5;
+double area = radius * radius * Math.PI;
+Console.WriteLine($"The area of a {radius * 2} cm. circle is {area} cm.");
